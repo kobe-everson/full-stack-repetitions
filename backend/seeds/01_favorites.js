@@ -1,7 +1,7 @@
 exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex("favorites").del();
-  await knex("table_name").insert([
+  await knex("favorites").insert([
     {
       title: "Inception",
       main_character: `Dominick "Dom" Cobb`,
